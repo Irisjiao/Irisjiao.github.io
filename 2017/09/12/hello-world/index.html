@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Iris_jiao">
 <meta property="og:description" content="新手来袭，最近朋友推荐Hexo，并用hexo建立了自己的博客，不由对hexo的高效搭建博客能力感到赞叹！">
 <meta property="og:image" content="http://irisjiao.github.io/2017/09/12/hello-world/hexo.png">
-<meta property="og:updated_time" content="2018-10-31T03:23:23.818Z">
+<meta property="og:updated_time" content="2018-10-31T03:25:05.073Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+github搭建个人博客">
 <meta name="twitter:description" content="新手来袭，最近朋友推荐Hexo，并用hexo建立了自己的博客，不由对hexo的高效搭建博客能力感到赞叹！">
@@ -160,12 +160,12 @@
 <p>最后执行命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo d</div></pre></td></tr></table></figure></p>
 <h3 id="hexo-d-报错"><a href="#hexo-d-报错" class="headerlink" title="hexo d 报错"></a>hexo d 报错</h3><p>好久没有更新博客了，报错找了好多文档，终于找到答案了，亲测有效</p>
 <p>error: failed to execute prompt script (exit code 1)<br>fatal: could not read Username for ‘<a href="https://github.com" target="_blank" rel="external">https://github.com</a>‘: No error</p>
-<p>修改配置文件：<br>根目录下的 _config.yml<br>deploy节点<br>原来的配置为：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">    <span class="built_in">type</span>: git</div><div class="line">    repo: https://github.com/&#123;yourname&#125;/&#123;yourname&#125;.github.io.git</div><div class="line">    branch: master</div><div class="line">   ``` </div><div class="line"></div><div class="line">修改为如下：</div><div class="line">```bash</div><div class="line">deploy:</div><div class="line">    <span class="built_in">type</span>: git</div><div class="line">    repo: https://&#123;yourname&#125;:&#123;yourpassword&#125;@github.com/&#123;yourname&#125;/&#123;yourname&#125;.github.io.git</div><div class="line">    branch: master</div></pre></td></tr></table></figure></p>
+<p>修改配置文件：<br>根目录下的 _config.yml<br>deploy节点<br>原来的配置为：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">    <span class="built_in">type</span>: git</div><div class="line">    repo: https://github.com/&#123;yourname&#125;/&#123;yourname&#125;.github.io.git</div><div class="line">    branch: master</div><div class="line">``` </div><div class="line"></div><div class="line">修改为如下：</div><div class="line">```bash</div><div class="line">deploy:</div><div class="line">    <span class="built_in">type</span>: git</div><div class="line">    repo: https://&#123;yourname&#125;:&#123;yourpassword&#125;@github.com/&#123;yourname&#125;/&#123;yourname&#125;.github.io.git</div><div class="line">    branch: master</div></pre></td></tr></table></figure></p>
 <p>参考文章<br>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a><br>           <a href="https://myashe.github.io/2018/06/11/Hexo%20d%20%E6%8A%A5%E9%94%99/" target="_blank" rel="external">Y Augerlmir 博客</a></p>
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2018年10月31日 11:23</p>
+        <p>最后更新： 2018年10月31日 11:25</p>
         <p>原始链接： <a class="post-url" href="/2017/09/12/hello-world/" title="Hexo+github搭建个人博客">http://irisjiao.github.io/2017/09/12/hello-world/</a></p>
         <footer>
             <a href="http://irisjiao.github.io">
